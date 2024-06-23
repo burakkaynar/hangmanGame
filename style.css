@@ -82,7 +82,7 @@ body::before{
 }
 #letters div{
     /* background-color: #5581ad; */
-    color: #57A6A1;
+    color: #fff;
     width: 100px;
     height: 100px;
     border-radius: 35px;
@@ -91,7 +91,7 @@ body::before{
     align-items: center;
     justify-content: center;
 
-    background: rgba(82, 82, 82, 0.37);
+    background: #934a28e7;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1.6px);
