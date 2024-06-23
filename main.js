@@ -43,12 +43,11 @@ function selectCategory(btn, array){
         const emptyChar = randomLetters.indexOf(" ")
         delete randomLetters[emptyChar]
         
-        
         randomLetters.forEach(letterEach => {
             const emptyDiv = document.createElement("div")
             emptyDiv.innerHTML = " "
             unSeenCards.append(emptyDiv)
-    
+
             const unknownCountry = document.createElement("div")
             unknownCountry.innerHTML = letterEach
             unknownCountry.classList.add("d-none")
