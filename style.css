@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -3;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#unSeenCards{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 70px 0 130px 0;
+    justify-content: center;
+}
+#unSeenCards div{
+    /* background-color: #240750; */
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(204, 240, 205, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+    border: 1px solid rgba(204, 240, 205, 0.05);
+}
+.btnS{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.btnS h1{
+    color: #fff;
+    background: #5581ad;
+    padding: 12px 150px;
+    border-radius: 20px;
+}
+.btnS button{
+    font-size: 32px;
+    font-weight: 500;
+    width: 300px;
+    height: 70px;
+    background: #240750;
+    border-radius: 20px;
+    color: #fff;
+}
+#letters{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#letters div{
+    /* background-color: #5581ad; */
+    color: #57A6A1;
+    width: 100px;
+    height: 100px;
+    border-radius: 35px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(82, 82, 82, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+    border: 1px solid rgba(82, 82, 82, 0.12);
+
+    transition-duration: .25s;
+}
+#letters div:hover{
+    transform: scale(1.25);
+    transition-duration: .25s;
+}
+#mainTimeDiv{
+    border: 1px solid #fff;
+    border-radius: 24px;
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    top: 50px;
+    right: 20%;
+}
+#mainTimeDiv svg{
+    color: #fff;
+}
+#timeDiv{
+    width: calc(100% - 48px);
+    height: 18px;
+    border-radius: 15px;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 40px;
+}
+#timePosition{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#healthDiv{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    padding: 6px 10px 3px 10px;
+    border: 1px solid #240750;
+    border-radius: 15px;
+}
+#healthDiv svg{
+    color: red;
+}
+.finishMsgClass{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.finishMsgClass h1{
+    margin-bottom: 50px;
+}
